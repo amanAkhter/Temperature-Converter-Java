@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Enter Temperature"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:id="@+id/getVal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:id="@+id/showAns"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celcius to Fahrenhit"
+            android:id="@+id/c2f"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenhit to Celcius"
+            android:id="@+id/f2c"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:id="@+id/ansBtn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Again"
+            android:id="@+id/againBtn"/>
+    </LinearLayout>
+
+</LinearLayout>
